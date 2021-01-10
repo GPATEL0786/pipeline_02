@@ -20,6 +20,7 @@ agent any
     {input "please approve the deployment?"
     }
    }
+  }
    {stage('deploy')
     {steps
      {sh 'code is deploying'
