@@ -8,27 +8,22 @@ agent any
     }
    }
     }
-  {stage('git building')
+  stage('git building')
    {steps
     {sh 'echo building git'
     }
    }
-  
-  }
-  {stage('get approval')
+    stage('get approval')
    {steps
     {input "please approve the deployment?"
     }
    }
-  }
-   {stage('deploy')
+     stage('deploy')
     {steps
      {sh 'code is deploying'
      }
     }
-   }
-
-  
+    
   }
   
   
