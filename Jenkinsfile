@@ -17,7 +17,7 @@ agent any
   }
   {stage('get approval')
    {steps
-    {input 'please approve the deployment?'
+    {input "please approve the deployment?"
     }
    }
    {stage('deploy')
