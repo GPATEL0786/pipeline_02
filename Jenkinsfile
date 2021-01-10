@@ -20,7 +20,7 @@ agent any
    }
      stage('deploy')
     {steps
-     {sh 'code is deploying'
+     {sh 'echo is deploying'
      }
     }
     
