@@ -2,13 +2,13 @@ pipeline
 {
 agent any
   stages
-  {stage ('git clone')
+  {
+    stage ('git clone')
    {steps
     {sh 'echo downloading git'
     }
    }
-    }
-  stage('git building')
+      stage('git building')
    {steps
     {sh 'echo building git'
     }
@@ -22,6 +22,8 @@ agent any
     {steps
      {sh 'code is deploying'
      }
+    }
+    
     }
     
   }
